@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTA DE TAREAS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="18dp"
+        android:gravity="center_horizontal"/>
+
+
+    <Button
+        android:id="@+id/btnIR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NUEVA TAREA"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/design_default_color_primary_dark"
+        android:elevation="6dp"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaTarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
